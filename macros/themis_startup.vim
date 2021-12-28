@@ -73,10 +73,11 @@ function s:main() abort
       visual
     endif
     autocmd! plugin-themis-startup VimLeave
+    call themis#log("test end")
     if error_count == 0
-      qall!
+      " qall!
     else
-      cquit
+      " cquit
     endif
   endtry
 endfunction
